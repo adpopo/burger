@@ -18,4 +18,5 @@ app.use("/",routes);
 
 
 //turn that shit on
-app.listen(3000);
+var port = 3000;
+app.listen(process.env.PORT || port);
